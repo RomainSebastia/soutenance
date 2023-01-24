@@ -1,0 +1,208 @@
+/* recupération antipasto */
+@font-face {
+    font-family: 'antipasto';
+    src: url('webfontkit-20230120-030739/antipasto-pro-regular-trial-webfont.woff2') format('woff2'),
+        url('webfontkit-20230120-030739/antipasto-pro-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* reset */
+
+a {
+    color: black;
+}
+
+
+h1 {
+    font-family: 'antipasto';
+    font-size: 4.1rem;
+
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: 'antipasto';
+}
+
+
+p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+/* HEADER */
+
+/* NAV */
+
+/* bordure pour la nav */
+
+.navbar {
+    border: 4px solid rgb(212, 212, 212);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* slider TEXTE */
+
+.background-slider {
+
+    background-color: rgba(0, 0, 0, 0.241);
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+   margin-left: 3px;
+    width: 100%;
+  
+  
+}k
+
+/* DIV AVANT PREMIERE SECTION */
+
+.border-collection {
+    background-color: #523131;
+    height: 15px;
+}
+
+/* SECTION 1 CARDS */
+
+.cards-color {
+    background-color: #e4e4e4;
+    border: 3px solid rgb(211, 209, 209);
+}
+
+/* BORDURE DERNIERE ARTICLE */
+
+
+.border-derniere-section {
+    width: 100%;
+    height: 3px;
+    background-color: #e4e4e4;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+
+
+
+/* titre du bloc avant formulaire */
+
+.titre-book {
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    font-size: 1rem;
+    width: 10%;
+}
+
+/* bloc formulaire avnat le clique */
+
+.lien-formulaire {
+    position: relative;
+}
+
+.click-formulaire {
+    position: absolute;
+    top:58%;
+    right: 63%;
+}
+
+/* titre du bloc avant formulaire */
+
+.titre-book {
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    font-size: 1.2rem;
+    width: 10%;
+    font-family: 'antipasto';
+}
+
+
+
+/* FOOTER ICONS */
+
+.icons {
+
+
+    font-size: 1.6rem;
+
+}
+
+
+/* RESPONSIV MAQUETTE */
+
+
+
+/*  pour les écrans de téléphone */
+@media (max-width: 768px) {
+
+
+
+
+    .cards-tel {
+        width: 50%;
+        }
+   
+
+    .carousel {
+        display: none;
+    }
+
+
+    .collection {
+        font-size: 1rem;
+
+    }
+
+    .click-formulaire {
+       
+        bottom: 22%;
+        left: 14%;;
+        
+    }
+
+    .titre-book {
+        top: 5%;
+        left: 22%;
+        
+    }
+
+}
+
+ 
+ /*  pour les écrans de tablette */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .click-formulaire {
+       
+        top:58%;
+        left: 10%;
+    }
+
+
+    .carousel {
+        display: none;
+    }
+
+
+    .titre-book {
+        top: 8%;
+        left: 11%;
+       
+    }
+
+
+  }
+
+
+  @media (min-width: 991px) and (max-width: 1200px) {
+    .click-formulaire {
+        position: absolute;
+        top:58%;
+        left: 11%;
+    }
+  }
