@@ -118,12 +118,12 @@ function displayArticle(data) {
 
 // CETTE FONCTION SE DECLANCHE LORS DU CLIQUE SUR LES BOUTONS 1 ET 2
 
-// L'OPERATEUR AWAIT SIGNIFIE QUE L'EXECUTION DE LA FONCTION ATTENTEREPONSE SERA SUSPENDU JUSQU'A CE QUE LA FONCTION ATTENTEREPONSE RENVOIE UNE REPONSE
+// L'OPERATEUR AWAIT SIGNIFIE QUE L'EXECUTION DE LA FONCTION GETDATA SERA SUSPENDU JUSQU'A CE QUE LA FONCTION GETDATA RENVOIE UNE REPONSE
 
 
 
 async function textModal(articleId) {
-  const articleData = await attenteReponse(articleId);
+  const articleData = await getData(articleId);
 
   displayArticle(articleData);
 
@@ -135,7 +135,7 @@ async function textModal(articleId) {
 // LA FONCTION ATTENTEREPONSE PREND EN PARAMETRE UN NUMERO D'ARTICLE (articleNew)
 
 
-async function attenteReponse(articleId) {
+async function getData(articleId) {
 
   return await fetch(`https://www.tbads.eu/greta/kercode/ajax/?article=${articleId}`)
     .then(response => response.json())
